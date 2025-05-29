@@ -1,4 +1,6 @@
-﻿namespace Buoi6_LyThuyet.Repositories
+﻿using Buoi6_LyThuyet.Models;
+
+namespace Buoi6_LyThuyet.Repositories
 {
     public class EFProductRepository : IProductRepository
     {

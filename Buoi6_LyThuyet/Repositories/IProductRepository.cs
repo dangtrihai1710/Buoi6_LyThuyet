@@ -1,11 +1,13 @@
-﻿namespace Buoi6_LyThuyet.Repositories
+﻿using Buoi6_LyThuyet.Models;
+
+namespace Buoi6_LyThuyet.Repositories
 {
-    public interface ICategoryRepository
+    public interface IProductRepository
     {
-        Task<IEnumerable<Category>> GetAllAsync();
-        Task<Category> GetByIdAsync(int id);
-        Task AddAsync(Category category);
-        Task UpdateAsync(Category category);
+        Task<IEnumerable<Product>> GetAllAsync();
+        Task<Product> GetByIdAsync(int id);
+        Task AddAsync(Product product);
+        Task UpdateAsync(Product product);
         Task DeleteAsync(int id);
     }
 }

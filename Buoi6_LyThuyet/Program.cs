@@ -1,14 +1,18 @@
+using Buoi6_LyThuyet.Models;
+using Buoi6_LyThuyet.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
-options.UseSqlServer(builder.Configuration.GetConnectionString("Default
- Connection"))); 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

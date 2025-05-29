@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Buoi6_LyThuyet.Models;
+using Buoi6_LyThuyet.Repositories;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Buoi6_LyThuyet.Controllers
 {
