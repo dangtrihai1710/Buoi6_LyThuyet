@@ -1,5 +1,5 @@
 ﻿using Buoi6_LyThuyet.Models;
-
+using Microsoft.EntityFrameworkCore;
 namespace Buoi6_LyThuyet.Repositories
 {
     public class EFCategoryRepository : ICategoryRepository

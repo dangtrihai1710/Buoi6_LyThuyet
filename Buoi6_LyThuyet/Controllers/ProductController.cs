@@ -1,7 +1,7 @@
 ﻿using Buoi6_LyThuyet.Models;
 using Buoi6_LyThuyet.Repositories;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Mvc.Rendering;
 namespace Buoi6_LyThuyet.Controllers
 {
     public class ProductController : Controller
